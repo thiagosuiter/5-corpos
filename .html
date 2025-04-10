@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando o DOM</title>
+  <script>
+    function alterarElemento() {
+      var novoTexto = prompt("Digite um novo texto para o título:");
+      if (novoTexto) {
+        document.getElementById("titulo").textContent = novoTexto;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1 id="titulo">Título</h1>  <!-- Título que será alterado -->
+  <h2>Subtítulo</h2>  <!-- Subtítulo -->
+  <p>Parágrafo.</p>  <!-- Parágrafo -->
+  <div>Conteúdo de uma div.</div>  <!-- Div -->
+  <input type="text" placeholder="Digite algo...">  <!-- Campo de texto -->
+  
+  <!-- Botão que altera o conteúdo do título -->
+  <button onclick="alterarElemento()">Alterar Título</button>
+</body>
+</html>
